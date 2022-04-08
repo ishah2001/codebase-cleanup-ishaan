@@ -7,7 +7,15 @@ from random import choice
 
 
 def determine_winner(user_choice, computer_choice):
-    #return "paper"
+    
+    """
+    This is a doctstring. It tells us what this function is about.
+    This function helps determine the winner of a rock, paper, scissors game
+
+    Invoke like this: determine_winner("rock","scissors")
+
+    """
+
     winners = {
         "rock": {
             "rock": None,
@@ -27,7 +35,7 @@ def determine_winner(user_choice, computer_choice):
     }
     winning_choice = winners[user_choice][computer_choice]
     return winning_choice
-    #return "OOPS"
+    
 
 
 
